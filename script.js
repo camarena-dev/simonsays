@@ -52,7 +52,7 @@ function verify(button) {
         document.getElementById('score').innerHTML = score;
         idx++;
     } else {
-        alert("You lost :(\nYou survived for " + turn + " turns\n Your final score was: " + score);
+        alert("You lost :(\nYou survived for " + turn + " turns\nYour final score was: " + score);
         lost();
         return;
     }
@@ -70,7 +70,7 @@ function activateColor(step) {
     setTimeout(() => {
         document.getElementById(colors[randoms[step]]).classList.remove('active');
         active = false;
-    }, 1000); //The color is activated 1 second
+    }, 1000); 
 }
 
 function reproduceSound(sound) {
@@ -89,8 +89,7 @@ async function generateNew() {
 
     for (let i = 0; i < generatedColors.length; i++) {
         activateColor(i);
-
-        await new Promise(r => setTimeout(r, 1000)); //Wait a second for the next color
+        await new Promise(r => setTimeout(r, 1500));
     }
 }
 
@@ -99,6 +98,7 @@ function lost() {
     randoms = [];
     idx = 0;
     turn = 0;
+
     score = 0;
     document.getElementById('score').innerHTML = score;
 

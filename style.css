@@ -67,7 +67,7 @@ h1,
 
 #green:active,
 #green.active {
-    box-shadow: 0 0 30px #008000, 0 0 30px #109010;
+    box-shadow: 0 0 20px #008000, 0 0 30px #109010;
 }
 
 #red {
@@ -76,7 +76,7 @@ h1,
 
 #red:active,
 #red.active {
-    box-shadow: 0 0 30px #ff0000, 0 0 30px #ec5353;
+    box-shadow: 0 0 20px #ff0000, 0 0 30px #ec5353;
 }
 
 #yellow {
@@ -85,7 +85,7 @@ h1,
 
 #yellow:active,
 #yellow.active {
-    box-shadow: 0 0 30px #ffff00, 0 0 30px #ecec53;
+    box-shadow: 0 0 20px #ffff00, 0 0 30px #ecec53;
 }
 
 #blue {
@@ -94,5 +94,5 @@ h1,
 
 #blue:active,
 #blue.active {
-    box-shadow: 0 0 30px #0000ff, 0 0 30px #2e2ed2;
+    box-shadow: 0 0 20px #0000ff, 0 0 30px #2e2ed2;
 }
